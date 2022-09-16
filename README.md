@@ -11,6 +11,7 @@ Credit risk is an inherently unbalanced classification problem, as good loans ea
 -	Recall High Risk: 0.62
 -	Recall Average: 0.68
 ![](https://github.com/pojones/credit_risk_analysis/blob/f845b2f9f75eec333ec777048881da143c52a8ee/images/naiveOversamplingResults.png)
+
 #### SMOTE Oversampling
 -	Balanced Accuracy: 0.624
 -	Precision High Risk: 0.01
