@@ -12,8 +12,9 @@ Credit risk is an inherently unbalanced classification problem, as good loans ea
 -	Recall High Risk: 0.62
 -	Recall Average: 0.68
 <br/>
+
 ![](https://github.com/pojones/credit_risk_analysis/blob/f845b2f9f75eec333ec777048881da143c52a8ee/images/naiveOversamplingResults.png)
-<br/>
+
 #### SMOTE Oversampling
 -	Balanced Accuracy: 0.624
 -	Precision High Risk: 0.01
@@ -21,8 +22,9 @@ Credit risk is an inherently unbalanced classification problem, as good loans ea
 -	Recall High Risk: 0.59
 -	Recall Average: 0.66
 <br/>
+
 ![](https://github.com/pojones/credit_risk_analysis/blob/f845b2f9f75eec333ec777048881da143c52a8ee/images/smoteOversamplingResults.png)
-<br/>
+
 #### Cluster Centroids Undersampling
 -	Balanced Accuracy: 0.516
 -	Precision High Risk: 0.01
@@ -30,8 +32,9 @@ Credit risk is an inherently unbalanced classification problem, as good loans ea
 -	Recall High Risk: 0.60
 -	Recall Average: 0.44
 <br/>
+
 ![](https://github.com/pojones/credit_risk_analysis/blob/f845b2f9f75eec333ec777048881da143c52a8ee/images/undersamplingResults.png)
-<br/>
+
 #### Combination Sampling (Over and Under with SMOTEENN)
 -	Balanced Accuracy: 0.62
 -	Precision High Risk: 0.01
@@ -39,8 +42,9 @@ Credit risk is an inherently unbalanced classification problem, as good loans ea
 -	Recall High Risk: 0.71
 -	Recall Average: 0.53
 <br/>
+
 ![](https://github.com/pojones/credit_risk_analysis/blob/f845b2f9f75eec333ec777048881da143c52a8ee/images/combinationSampling.png)
-<br/>
+
 ### Ensemble Classifiers
 The data was also fed to two machine learning models with anticipation of increasing the model’s performance.
 #### Balanced Random Forest
@@ -50,8 +54,9 @@ The data was also fed to two machine learning models with anticipation of increa
 -	Recall High Risk: 0.70
 -	Recall Average: 0.87
 <br/>
+
 ![](https://github.com/pojones/credit_risk_analysis/blob/f845b2f9f75eec333ec777048881da143c52a8ee/images/randomForestResults.png)
-<br/>
+
 #### Easy Ensemble AdaBoost
 -	Balanced Accuracy: 0.93
 -	Precision High Risk: 0.09
@@ -59,8 +64,9 @@ The data was also fed to two machine learning models with anticipation of increa
 -	Recall High Risk: 0.92
 -	Recall Average: 0.94
 <br/>
+
 ![](https://github.com/pojones/credit_risk_analysis/blob/f845b2f9f75eec333ec777048881da143c52a8ee/images/adaBoostResults.png)
-<br/>
+
 ## Summary
 The Easy Ensemble AdaBoost Classifier had the highest accuracy at 93%. However, this is not always the best case in an unbalanced dataset. The model’s accuracy can be attributed to how well it fits for low-risk applicants. However, risk assessment is generally focused on the higher risk applicants, since they would be the clients with the greatest liability. 
 All the models had low precision for high-risk, most of them exhibiting extremely low precision (5%). It is probably a good thing to keep this number low, since it represents how many erroneously classified high-risk applicants there are. 
